@@ -5,17 +5,17 @@ import MarkdownDisplay from '@/components/day3/MarkdownDisplay';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const description = `
-# Authentication
-AWS Amplify v6 Authentication`;
+# Biometrics
+Use FaceID and Fingerprint to unlock the next screens`;
 
 const DayDetailsScreen = () => {
   return (
     <SafeAreaView edges={['bottom']} style={{ flex: 1 }}>
-      <Stack.Screen options={{ title: 'Day 9: Auth' }} />
+      <Stack.Screen options={{ title: 'Day 10: Biometrics' }} />
 
       <MarkdownDisplay>{description}</MarkdownDisplay>
 
-      <Link href="/day9/protected" asChild>
+      <Link href="/day10/protected" asChild>
         <Button title="Go to Protected App" />
       </Link>
     </SafeAreaView>
